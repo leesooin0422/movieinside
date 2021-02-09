@@ -9,7 +9,6 @@ import java.io.FileInputStream
 import java.io.FileOutputStream
 
 class CalenderActivity : MainActivity() {
-    //캘린더 페이지
     var fname: String = ""
     var str: String = ""
     var fname2: String = ""
@@ -35,7 +34,6 @@ class CalenderActivity : MainActivity() {
         setContentView(R.layout.calender)
         setTitle("Movie Inside")
 
-        //캘린더 페이지
         calendarView = findViewById(R.id.calendarView)
         diaryTextView = findViewById(R.id.diaryTextView)
         save_Btn = findViewById(R.id.save_Btn)
@@ -48,7 +46,6 @@ class CalenderActivity : MainActivity() {
         titleEditText = findViewById(R.id.titleEditText)
         titleText = findViewById(R.id.titleText)
 
-        /********************************************캘린더 페이지*****************************************/
 
         calendarView.setOnDateChangeListener { view, year, month, dayOfMonth ->  // 달력 날짜가 선택되면
 
